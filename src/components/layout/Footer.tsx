@@ -22,30 +22,7 @@ export const Footer: React.FC = () => {
                 enhance customer support, and supercharge lead generation.
               </p>
               <div className="flex space-x-4">
-                <motion.a 
-                  href="#" 
-                  className="text-neutral-400 hover:text-primary transition-colors duration-200"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Twitter size={20} />
-                </motion.a>
-                <motion.a 
-                  href="#" 
-                  className="text-neutral-400 hover:text-primary transition-colors duration-200"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Linkedin size={20} />
-                </motion.a>
-                <motion.a 
-                  href="#" 
-                  className="text-neutral-400 hover:text-primary transition-colors duration-200"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Github size={20} />
-                </motion.a>
+
                 <motion.a 
                   href="mailto:milleniumautoai@gmail.com" 
                   className="text-neutral-400 hover:text-primary transition-colors duration-200"
@@ -67,10 +44,10 @@ export const Footer: React.FC = () => {
             >
               <h4 className="text-white font-semibold mb-4">Services</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">AI Chat Agents</a></li>
-                <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">Lead Generation</a></li>
-                <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">CRM Integration</a></li>
-                <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">Workflow Automation</a></li>
+                <li><a className="text-neutral-400 hover:text-white transition-colors duration-200">AI Chat Agents</a></li>
+                <li><a className="text-neutral-400 hover:text-white transition-colors duration-200">Lead Generation</a></li>
+                <li><a className="text-neutral-400 hover:text-white transition-colors duration-200">CRM Integration</a></li>
+                <li><a className="text-neutral-400 hover:text-white transition-colors duration-200">Workflow Automation</a></li>
               </ul>
             </motion.div>
           </div>
@@ -85,8 +62,6 @@ export const Footer: React.FC = () => {
               <h4 className="text-white font-semibold mb-4">Company</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">About Us</a></li>
-                <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">Case Studies</a></li>
-                <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">Blog</a></li>
                 <li><a href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">Contact</a></li>
               </ul>
             </motion.div>

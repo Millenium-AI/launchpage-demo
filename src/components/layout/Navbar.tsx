@@ -54,6 +54,12 @@ export const Navbar: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
+        <a 
+            onClick={() => scrollToSection('features')} 
+            className="nav-link cursor-pointer"
+          >
+            Solutions
+          </a>
           <a 
             onClick={() => scrollToSection('services')} 
             className="nav-link cursor-pointer"
@@ -67,10 +73,10 @@ export const Navbar: React.FC = () => {
             Process
           </a>
           <a 
-            onClick={() => scrollToSection('features')} 
+            onClick={() => scrollToSection('aboutus')} 
             className="nav-link cursor-pointer"
           >
-            Solutions
+            About Us
           </a>
           <a 
             onClick={() => scrollToSection('cta')} 

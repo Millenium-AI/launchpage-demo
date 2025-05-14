@@ -13,34 +13,39 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              <span className="block">We Build</span>
+              <span className="block">We Integrate</span>
               <span className="gradient-text glow-text block">AI Automations</span>
-              <span className="block">For Customer Support</span>
+              <span className="block">For Your Buisness</span>
             </h1>
             <p className="text-neutral-300 text-lg md:text-xl mb-8 max-w-xl">
               Embrace AI to revolutionize your customer support, supercharge your lead generation, 
               and automate your workflows. Book a call to discuss a tailor-made strategy that works for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                href="#cta"
-                className="btn-primary"
-                whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)' }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <BookUser className="mr-2" size={20} />
-                Book a Call
-              </motion.a>
-              <motion.a
-                href="#"
-                className="btn-outline"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Phone className="mr-2" size={20} />
-                Let's Talk
-              </motion.a>
-            </div>
+            <motion.a
+              href="https://calendly.com/milleniumautoai/30min" 
+              className="btn-primary"
+              whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)' }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Book a call to schedule an appointment"
+            >
+              <BookUser className="mr-2" size={20} />
+              Book a Call
+            </motion.a>
+            <motion.a
+              href="tel:+15098500659" 
+              className="btn-outline"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Call us at (509) 850-0659"
+            >
+              <Phone className="mr-2" size={20} />
+              Let's Talk
+            </motion.a>
+          </div>
+          <p className="mt-4 text-sm text-gray-600 text-center">
+            Or call us at (509) 850-0659
+          </p>
           </motion.div>
           
           <motion.div
@@ -90,34 +95,6 @@ export const Hero: React.FC = () => {
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary-500/20 via-secondary-500/20 to-accent-500/20 blur-3xl -z-10"></div>
           </motion.div>
         </div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
-          className="mt-20 py-8 glass-card px-8 grid grid-cols-2 md:grid-cols-4 gap-8"
-        >
-          <div className="text-center">
-            <p className="text-neutral-300 text-sm">TRUSTED BY</p>
-            <h3 className="gradient-text text-xl font-bold">500+</h3>
-            <p className="text-neutral-400 text-sm">Businesses</p>
-          </div>
-          <div className="text-center">
-            <p className="text-neutral-300 text-sm">AUTOMATION</p>
-            <h3 className="gradient-text text-xl font-bold">24/7</h3>
-            <p className="text-neutral-400 text-sm">Availability</p>
-          </div>
-          <div className="text-center">
-            <p className="text-neutral-300 text-sm">RESPONSE TIME</p>
-            <h3 className="gradient-text text-xl font-bold">&lt;5s</h3>
-            <p className="text-neutral-400 text-sm">Average</p>
-          </div>
-          <div className="text-center">
-            <p className="text-neutral-300 text-sm">ROI INCREASE</p>
-            <h3 className="gradient-text text-xl font-bold">300%</h3>
-            <p className="text-neutral-400 text-sm">Average</p>
-          </div>
-        </motion.div>
       </div>
       
       <div className="absolute inset-0 bg-hero-pattern opacity-10 pointer-events-none"></div>

@@ -26,7 +26,7 @@ export const CallToAction: React.FC = () => {
               </p>
               
               <motion.a
-                href="#"
+                href="https://calendly.com/milleniumautoai/30min"
                 className="btn-primary inline-flex items-center text-lg px-8 py-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
