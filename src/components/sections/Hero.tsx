@@ -13,34 +13,39 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              <span className="block">We Build</span>
+              <span className="block">We Integrate</span>
               <span className="gradient-text glow-text block">AI Automations</span>
-              <span className="block">For Customer Support</span>
+              <span className="block">For Your Buisness</span>
             </h1>
             <p className="text-neutral-300 text-lg md:text-xl mb-8 max-w-xl">
               Embrace AI to revolutionize your customer support, supercharge your lead generation, 
               and automate your workflows. Book a call to discuss a tailor-made strategy that works for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                href="#cta"
-                className="btn-primary"
-                whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)' }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <BookUser className="mr-2" size={20} />
-                Book a Call
-              </motion.a>
-              <motion.a
-                href="#"
-                className="btn-outline"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Phone className="mr-2" size={20} />
-                Let's Talk
-              </motion.a>
-            </div>
+            <motion.a
+              href="https://calendly.com/your-username/30min" // Replace with your actual booking link
+              className="btn-primary"
+              whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(59, 130, 246, 0.5)' }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Book a call to schedule an appointment"
+            >
+              <BookUser className="mr-2" size={20} />
+              Book a Call
+            </motion.a>
+            <motion.a
+              href="tel:+1234567890" // Replace with your actual phone number
+              className="btn-outline"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Call us at +1-234-567-890"
+            >
+              <Phone className="mr-2" size={20} />
+              Let's Talk
+            </motion.a>
+          </div>
+          <p className="mt-4 text-sm text-gray-600 text-center">
+            Or call us at +1-234-567-890
+          </p>
           </motion.div>
           
           <motion.div
